@@ -1,0 +1,23 @@
+@model Aula29MVCDB.Models.Pedido;
+
+@{
+    ViewData["Title"] = $"Pedido:  {Model.PedidoId}";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p><b>PedidoId: </b>            @Model.PedidoId</p>
+<p><b>Empregado: </b>           @Model.EmpregadoId</p>
+<p><b>DataPedido: </b>          @Model.DataPedido</p>
+<p><b>Peso: </b>                @Model.Peso</p>
+<p><b>CodTransportadora: </b>   @Model.CodTransportadora</p>
+<p><b>PedidoClienteId: </b>     @Model.PedidoClienteId</p>
+
+<a href="/Pedido/Show/?PedidoId=@Model.PedidoId">
+    <button type="button">Detalhes</button>
+</a>
+<a href="/Pedido/Delete/?PedidoId=@Model.PedidoId">
+    <button type="button">Deletar</button>
+</a>
+<a href="/Pedido/Update/?PedidoId=@Model.PedidoId">
+    <button type="button">Atualizar</button>
+</a>

@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Criar pedidos";
+}
+
+<div class="text">
+    <h1>Cadastrar um novo pedido</h1>
+    <hr>
+</div>
+
+<form action="CreateResult" method="post">
+    <table>
+        <tr>
+            <td>PedidoId:</td>
+            <td><input type="text" name="pedidoid" id="pedidoid" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>EmpregadoId:</td>
+            <td><input type="text" name="empregadoid" id="empregadoid" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Data do Pedido:</td>
+            <td><input type="text" name="datapedido" id="datapedido" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Peso:</td>
+            <td><input type="text" name="peso" id="peso" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Código da Transportadora:</td>
+            <td><input type="text" name="codtransportadora" id="codtransportadora" class="form-control" required></td>
+        </tr>
+
+        <tr>
+            <td>Pedido do ClienteId:</td>
+            <td><input type="text" name="pedidoclienteid" id="pedidoclienteid" class="form-control" required></td>
+        </tr>        
+        <tr>
+            <td> <button type="submit" class="btn btn-primary">Enviar</button></td>
+        </tr>
+
+    </table>
+</form>
